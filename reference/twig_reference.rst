@@ -418,7 +418,7 @@ humanize
     **type**: ``string``
 
 Makes a technical name human readable (i.e. replaces underscores by spaces
-and capitalizes the string).
+or transform camelCase like ``helloWorld`` to ``hello world`` and capitalizes the string).
 
 trans
 ~~~~~
