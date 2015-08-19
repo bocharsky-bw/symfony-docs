@@ -788,6 +788,12 @@ The ``QueryBuilder`` object contains every method necessary to build your
 query. By calling the ``getQuery()`` method, the query builder returns a
 normal ``Query`` object, which can be used to get the result of the query.
 
+The ``QueryBuilder`` helps to build a string query in those cases when it
+based on some result of conditions and allows you to avoid a query string
+concatenation manually in favor to use suitable methods calls and do this
+concatenation itself. Also, with ``QueryBuilder`` you could easy take away
+some parts of query to separate methods and reuse it in other queries.
+
 For more information on Doctrine's Query Builder, consult Doctrine's
 `Query Builder`_ documentation.
 
