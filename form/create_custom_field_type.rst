@@ -298,7 +298,7 @@ example, suppose that you're storing the gender parameters in configuration:
 
 To use the parameter, define your custom field type as a service, injecting
 the ``genders`` parameter value as the first argument to its to-be-created
-``__construct`` function:
+``__construct()`` function:
 
 .. configuration-block::
 
