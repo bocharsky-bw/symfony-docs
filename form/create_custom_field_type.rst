@@ -342,8 +342,8 @@ the ``genders`` parameter value as the first argument to its to-be-created
     for details.
 
 Be sure that the ``alias`` attribute of the tag corresponds with the value
-returned by the ``getName`` method defined earlier. You'll see the importance
-of this in a moment when you use the custom field type. But first, add a ``__construct``
+returned by the ``getName()`` method defined earlier. You'll see the importance
+of this in a moment when you use the custom field type. But first, add a ``__construct()``
 method to ``GenderType``, which receives the gender configuration::
 
     // src/AppBundle/Form/Type/GenderType.php
