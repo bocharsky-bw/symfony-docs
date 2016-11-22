@@ -482,7 +482,7 @@ the documentation for each type.
     
         ->add('dueDate', 'date', array(
             'widget' => 'single_text',
-            'required' => false
+            'required' => false,
         ))
 
     Also note that setting the ``required`` option to ``true`` will **not**
@@ -653,7 +653,7 @@ the choice is ultimately up to you.
 
     Every form needs to know the name of the class that holds the underlying
     data (e.g. ``AppBundle\Entity\Task``). Usually, this is just guessed
-    based off of the object passed to the second argument to ``createForm``
+    based off of the object passed to the second argument to ``createForm()``
     (i.e. ``$task``). Later, when you begin embedding forms, this will no
     longer be sufficient. So, while not always necessary, it's generally a
     good idea to explicitly specify the ``data_class`` option by adding the
